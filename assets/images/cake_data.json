@@ -1,0 +1,147 @@
+{
+    "cake_data":[
+    {
+      "title": "Black Forest",
+      "image": "assets/images/black_forest_cake.jpeg",
+      "price": {
+        "1": "45",
+        "1.5": "67",
+        "2": "90",
+        "2.5": "112",
+        "3": "135"
+      },
+      "description": "",
+      "ingredient": ""
+    },
+    {
+      "title": "Pine Apple",
+      "ingredient": "",
+      "image": "assets/images/pine_cake.jpeg",
+      "price": {
+        "1": "45",
+        "1.5": "67",
+        "2": "90",
+        "2.5": "112",
+        "3": "135"
+      },
+      "description": ""
+    },
+    {
+      "title": "Vanilla",
+      "image": "assets/images/vanialla_cake.jpeg",
+      "price": {
+        "1": "45",
+        "1.5": "67",
+        "2": "90",
+        "2.5": "112",
+        "3": "135"
+      },
+      "description": ""
+    },
+    {
+      "title": "Mango",
+      "ingredient": "",
+      "image": "assets/images/mongo_cake.jpeg",
+      "price": {
+        "1": "45",
+        "1.5": "67",
+        "2": "90",
+        "2.5": "112",
+        "3": "135"
+      },
+      "description": ""
+    },
+    {
+      "title": "Chocolate Cream",
+      "ingredient": "",
+      "image": "assets/images/chocolate_cake.jpeg",
+      "price": {
+        "1": "45",
+        "1.5": "67",
+        "2": "90",
+        "2.5": "112",
+        "3": "135"
+      },
+      "description": ""
+    },
+    {
+      "title": "Mango",
+      "ingredient": "",
+      "image": "assets/images/mango_cake.jpeg",
+      "price": {
+        "1": "45",
+        "1.5": "67",
+        "2": "90",
+        "2.5": "112",
+        "3": "135"
+      },
+      "description": ""
+    },
+    {
+      "title": "Rasmalai",
+      "ingredient": "",
+      "image": "assets/images/rasmalai_cake.jpeg",
+      "price": {
+        "1": "45",
+        "1.5": "67",
+        "2": "90",
+        "2.5": "112",
+        "3": "135"
+      },
+      "description": ""
+    },
+    {
+      "title": "Pista",
+      "ingredient": "",
+      "image": "assets/images/pista_cake.jpeg",
+      "price": {
+        "1": "45",
+        "1.5": "67",
+        "2": "90",
+        "2.5": "112",
+        "3": "135"
+      },
+      "description": ""
+    },
+    {
+      "title": "Butter Scotch",
+      "ingredient": "",
+      "image": "assets/images/butter_scotch_cake.jpeg",
+      "price": {
+        "1": "45",
+        "1.5": "67",
+        "2": "90",
+        "2.5": "112",
+        "3": "135"
+      },
+      "description": ""
+    },
+    {
+      "title": "Chocolate Truffle",
+      "ingredient": "",
+      "image": "assets/images/chocolate_truffle_cake.jpeg",
+      "price": {
+        "1": "45",
+        "1.5": "67",
+        "2": "90",
+        "2.5": "112",
+        "3": "135"
+      },
+      "description": ""
+    },
+    {
+      "title": "Cup Cake",
+      "ingredient": "",
+      "image": "assets/images/cup_cake.jpeg",
+      "price": {
+        "1": "45",
+        "1.5": "67",
+        "2": "90",
+        "2.5": "112",
+        "3": "135"
+      },
+      "description": ""
+    }
+  ]
+}
+  

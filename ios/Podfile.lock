@@ -1,0 +1,194 @@
+PODS:
+  - Flutter (1.0.0)
+  - flutter_image_compress (1.0.0):
+    - Flutter
+    - Mantle
+    - SDWebImage
+    - SDWebImageWebPCoder
+  - flutter_inappwebview (0.0.1):
+    - Flutter
+    - flutter_inappwebview/Core (= 0.0.1)
+    - OrderedSet (~> 5.0)
+  - flutter_inappwebview/Core (0.0.1):
+    - Flutter
+    - OrderedSet (~> 5.0)
+  - flutter_secure_storage (3.3.1):
+    - Flutter
+  - flutter_video_info (1.1.0):
+    - Flutter
+  - fluttertoast (0.0.2):
+    - Flutter
+    - Toast
+  - FMDB (2.7.5):
+    - FMDB/standard (= 2.7.5)
+  - FMDB/standard (2.7.5)
+  - gallery_saver (0.0.1):
+    - Flutter
+  - image_cropper (0.0.4):
+    - Flutter
+    - TOCropViewController (~> 2.6.1)
+  - image_gallery_saver (1.5.0):
+    - Flutter
+  - image_picker_ios (0.0.1):
+    - Flutter
+  - in_app_purchase_storekit (0.0.1):
+    - Flutter
+    - FlutterMacOS
+  - libphonenumber_plugin (0.0.1):
+    - Flutter
+    - PhoneNumberKit
+  - libwebp (1.3.1):
+    - libwebp/demux (= 1.3.1)
+    - libwebp/mux (= 1.3.1)
+    - libwebp/sharpyuv (= 1.3.1)
+    - libwebp/webp (= 1.3.1)
+  - libwebp/demux (1.3.1):
+    - libwebp/webp
+  - libwebp/mux (1.3.1):
+    - libwebp/demux
+  - libwebp/sharpyuv (1.3.1)
+  - libwebp/webp (1.3.1):
+    - libwebp/sharpyuv
+  - Mantle (2.2.0):
+    - Mantle/extobjc (= 2.2.0)
+  - Mantle/extobjc (2.2.0)
+  - OrderedSet (5.0.0)
+  - path_provider_foundation (0.0.1):
+    - Flutter
+    - FlutterMacOS
+  - permission_handler_apple (9.1.1):
+    - Flutter
+  - PhoneNumberKit (3.6.7):
+    - PhoneNumberKit/PhoneNumberKitCore (= 3.6.7)
+    - PhoneNumberKit/UIKit (= 3.6.7)
+  - PhoneNumberKit/PhoneNumberKitCore (3.6.7)
+  - PhoneNumberKit/UIKit (3.6.7):
+    - PhoneNumberKit/PhoneNumberKitCore
+  - SDWebImage (5.17.0):
+    - SDWebImage/Core (= 5.17.0)
+  - SDWebImage/Core (5.17.0)
+  - SDWebImageWebPCoder (0.13.0):
+    - libwebp (~> 1.0)
+    - SDWebImage/Core (~> 5.17)
+  - share_plus (0.0.1):
+    - Flutter
+  - shared_preferences_foundation (0.0.1):
+    - Flutter
+    - FlutterMacOS
+  - sqflite (0.0.2):
+    - Flutter
+    - FMDB (>= 2.7.5)
+  - Toast (4.0.0)
+  - TOCropViewController (2.6.1)
+  - url_launcher_ios (0.0.1):
+    - Flutter
+  - video_thumbnail (0.0.1):
+    - Flutter
+    - libwebp
+
+DEPENDENCIES:
+  - Flutter (from `Flutter`)
+  - flutter_image_compress (from `.symlinks/plugins/flutter_image_compress/ios`)
+  - flutter_inappwebview (from `.symlinks/plugins/flutter_inappwebview/ios`)
+  - flutter_secure_storage (from `.symlinks/plugins/flutter_secure_storage/ios`)
+  - flutter_video_info (from `.symlinks/plugins/flutter_video_info/ios`)
+  - fluttertoast (from `.symlinks/plugins/fluttertoast/ios`)
+  - gallery_saver (from `.symlinks/plugins/gallery_saver/ios`)
+  - image_cropper (from `.symlinks/plugins/image_cropper/ios`)
+  - image_gallery_saver (from `.symlinks/plugins/image_gallery_saver/ios`)
+  - image_picker_ios (from `.symlinks/plugins/image_picker_ios/ios`)
+  - in_app_purchase_storekit (from `.symlinks/plugins/in_app_purchase_storekit/ios`)
+  - libphonenumber_plugin (from `.symlinks/plugins/libphonenumber_plugin/ios`)
+  - path_provider_foundation (from `.symlinks/plugins/path_provider_foundation/ios`)
+  - permission_handler_apple (from `.symlinks/plugins/permission_handler_apple/ios`)
+  - share_plus (from `.symlinks/plugins/share_plus/ios`)
+  - shared_preferences_foundation (from `.symlinks/plugins/shared_preferences_foundation/ios`)
+  - sqflite (from `.symlinks/plugins/sqflite/ios`)
+  - url_launcher_ios (from `.symlinks/plugins/url_launcher_ios/ios`)
+  - video_thumbnail (from `.symlinks/plugins/video_thumbnail/ios`)
+
+SPEC REPOS:
+  trunk:
+    - FMDB
+    - libwebp
+    - Mantle
+    - OrderedSet
+    - PhoneNumberKit
+    - SDWebImage
+    - SDWebImageWebPCoder
+    - Toast
+    - TOCropViewController
+
+EXTERNAL SOURCES:
+  Flutter:
+    :path: Flutter
+  flutter_image_compress:
+    :path: ".symlinks/plugins/flutter_image_compress/ios"
+  flutter_inappwebview:
+    :path: ".symlinks/plugins/flutter_inappwebview/ios"
+  flutter_secure_storage:
+    :path: ".symlinks/plugins/flutter_secure_storage/ios"
+  flutter_video_info:
+    :path: ".symlinks/plugins/flutter_video_info/ios"
+  fluttertoast:
+    :path: ".symlinks/plugins/fluttertoast/ios"
+  gallery_saver:
+    :path: ".symlinks/plugins/gallery_saver/ios"
+  image_cropper:
+    :path: ".symlinks/plugins/image_cropper/ios"
+  image_gallery_saver:
+    :path: ".symlinks/plugins/image_gallery_saver/ios"
+  image_picker_ios:
+    :path: ".symlinks/plugins/image_picker_ios/ios"
+  in_app_purchase_storekit:
+    :path: ".symlinks/plugins/in_app_purchase_storekit/ios"
+  libphonenumber_plugin:
+    :path: ".symlinks/plugins/libphonenumber_plugin/ios"
+  path_provider_foundation:
+    :path: ".symlinks/plugins/path_provider_foundation/ios"
+  permission_handler_apple:
+    :path: ".symlinks/plugins/permission_handler_apple/ios"
+  share_plus:
+    :path: ".symlinks/plugins/share_plus/ios"
+  shared_preferences_foundation:
+    :path: ".symlinks/plugins/shared_preferences_foundation/ios"
+  sqflite:
+    :path: ".symlinks/plugins/sqflite/ios"
+  url_launcher_ios:
+    :path: ".symlinks/plugins/url_launcher_ios/ios"
+  video_thumbnail:
+    :path: ".symlinks/plugins/video_thumbnail/ios"
+
+SPEC CHECKSUMS:
+  Flutter: 50d75fe2f02b26cc09d224853bb45737f8b3214a
+  flutter_image_compress: 5a5e9aee05b6553048b8df1c3bc456d0afaac433
+  flutter_inappwebview: bfd58618f49dc62f2676de690fc6dcda1d6c3721
+  flutter_secure_storage: 7953c38a04c3fdbb00571bcd87d8e3b5ceb9daec
+  flutter_video_info: a932e1b0da369bba95c3a14b7f61d5f8b0d03280
+  fluttertoast: fafc4fa4d01a6a9e4f772ecd190ffa525e9e2d9c
+  FMDB: 2ce00b547f966261cd18927a3ddb07cb6f3db82a
+  gallery_saver: 9fc173c9f4fcc48af53b2a9ebea1b643255be542
+  image_cropper: 60c2789d1f1a78c873235d4319ca0c34a69f2d98
+  image_gallery_saver: 259eab68fb271cfd57d599904f7acdc7832e7ef2
+  image_picker_ios: 58b9c4269cb176f89acea5e5d043c9358f2d25f8
+  in_app_purchase_storekit: 6b297e2b5eab9fa3251a492d57301722e4132a71
+  libphonenumber_plugin: e8a7d64a6624a7c25f2c4ab0b7ead2a8e341e35e
+  libwebp: 33dc822fbbf4503668d09f7885bbfedc76c45e96
+  Mantle: c5aa8794a29a022dfbbfc9799af95f477a69b62d
+  OrderedSet: aaeb196f7fef5a9edf55d89760da9176ad40b93c
+  path_provider_foundation: c68054786f1b4f3343858c1e1d0caaded73f0be9
+  permission_handler_apple: e76247795d700c14ea09e3a2d8855d41ee80a2e6
+  PhoneNumberKit: 43b5169526cc417398c8f13f77c97552c1c6ed76
+  SDWebImage: 750adf017a315a280c60fde706ab1e552a3ae4e9
+  SDWebImageWebPCoder: af09429398d99d524cae2fe00f6f0f6e491ed102
+  share_plus: 056a1e8ac890df3e33cb503afffaf1e9b4fbae68
+  shared_preferences_foundation: e2dae3258e06f44cc55f49d42024fd8dd03c590c
+  sqflite: 6d358c025f5b867b29ed92fc697fd34924e11904
+  Toast: 91b396c56ee72a5790816f40d3a94dd357abc196
+  TOCropViewController: edfd4f25713d56905ad1e0b9f5be3fbe0f59c863
+  url_launcher_ios: ae1517e5e344f5544fb090b079e11f399dfbe4d2
+  video_thumbnail: c4e2a3c539e247d4de13cd545344fd2d26ffafd1
+
+PODFILE CHECKSUM: 9e8ac84c6ed045f78615204608f6e381f6dbcae5
+
+COCOAPODS: 1.11.3
