@@ -2,6 +2,6 @@
 
 ### Cakes App Final UI
 
-![App UI](/assets/github/IMG_2118.jpeg)
-(/assets/github/IMG_2136.jpeg)
-/assets/github/IMG_2129.jpeg
+![Login](/assets/github/IMG_2118.jpeg)
+![Home](/assets/github/IMG_2136.jpeg)
+![Cart](/assets/github/IMG_2129.jpeg)
