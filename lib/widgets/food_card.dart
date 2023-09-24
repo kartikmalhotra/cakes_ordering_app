@@ -53,7 +53,7 @@ class _CakeCardState extends State<CakeCard> {
     return GestureDetector(
       onTap: widget.onPress,
       child: Container(
-        height: AppScreenConfig.safeBlockVertical! * 60,
+        height: AppScreenConfig.safeBlockVertical! * 45,
         decoration: BoxDecoration(
           color: Colors.white.withOpacity(0.08),
         ),
@@ -101,12 +101,12 @@ class _CakeCardState extends State<CakeCard> {
                     child: Stack(
                       children: <Widget>[
                         Container(
-                          color: Colors.grey.withOpacity(0.1),
+                          color: Colors.white,
                           child: (widget.cakesData.images?.isNotEmpty ?? false)
                               ? CarouselSlider(
                                   carouselController: carouselController,
                                   options: CarouselOptions(
-                                    height: 300,
+                                    height: 200,
                                     aspectRatio: 16 / 9,
                                     viewportFraction: 1,
                                     enableInfiniteScroll: widget
@@ -130,7 +130,7 @@ class _CakeCardState extends State<CakeCard> {
                                                     children: <Widget>[
                                                       CachedNetworkImage(
                                                         imageUrl: photo["url"],
-                                                        fit: BoxFit.fill,
+                                                        fit: BoxFit.contain,
                                                         progressIndicatorBuilder:
                                                             (context, _, __) {
                                                           return Center(

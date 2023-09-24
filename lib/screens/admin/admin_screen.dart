@@ -86,8 +86,7 @@ class _AdminScreenState extends State<AdminScreen> {
                   size: 20,
                 ),
                 onTap: () {
-                  BlocProvider.of<OrderBloc>(context)
-                      .add(GetOrderEvent(dateTime: DateTime.now()));
+                  BlocProvider.of<OrderBloc>(context).add(GetOrderEvent());
                   Navigator.push(
                     context,
                     MaterialPageRoute(

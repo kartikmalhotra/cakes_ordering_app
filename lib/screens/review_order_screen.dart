@@ -88,11 +88,11 @@ class _ReviewOrderScreenState extends State<ReviewOrderScreen> {
               ),
             ],
           ),
-          SizedBox(height: 50),
+          SizedBox(height: 20),
           Container(
-            margin: EdgeInsets.symmetric(vertical: 30),
+            margin: EdgeInsets.symmetric(vertical: 10),
             padding: EdgeInsets.all(6),
-            height: 305,
+            height: 200,
             width: double.maxFinite,
             child: Stack(
               children: [
@@ -122,7 +122,7 @@ class _ReviewOrderScreenState extends State<ReviewOrderScreen> {
                                       children: <Widget>[
                                         CachedNetworkImage(
                                           imageUrl: photo["url"],
-                                          fit: BoxFit.cover,
+                                          fit: BoxFit.contain,
                                           progressIndicatorBuilder:
                                               (context, _, __) {
                                             return Center(
@@ -209,9 +209,8 @@ class _ReviewOrderScreenState extends State<ReviewOrderScreen> {
             ),
             SizedBox(height: 20),
             Container(
-              height: AppScreenConfig.safeBlockVertical! * 20,
+              height: AppScreenConfig.safeBlockVertical! * 16,
               padding: EdgeInsets.all(10.0),
-              width: AppScreenConfig.safeBlockHorizontal! * 20,
               decoration: BoxDecoration(
                 border: Border.all(width: 0.1),
               ),
@@ -266,37 +265,45 @@ class _ReviewOrderScreenState extends State<ReviewOrderScreen> {
                       ),
                     ),
                     Expanded(
-                      flex: 1,
+                      flex: 2,
                       child: Padding(
                         padding: const EdgeInsets.all(10.0),
                         child: Column(
                           mainAxisAlignment: MainAxisAlignment.center,
                           crossAxisAlignment: CrossAxisAlignment.center,
                           children: [
-                            Text(
-                              "${widget.selectedAddOn?.name}",
-                              style: Theme.of(context)
-                                  .textTheme
-                                  .bodyText1!
-                                  .copyWith(color: LightAppColors.blackColor),
-                              textAlign: TextAlign.center,
-                            ),
-                            Text(
-                              "\$ ${widget.selectedAddOn?.price ?? ""} ",
-                              style: Theme.of(context)
-                                  .textTheme
-                                  .subtitle1!
-                                  .copyWith(color: LightAppColors.primary),
-                            ),
-                            Text(
-                              "${widget.selectedAddOn?.colour ?? ""}",
-                              maxLines: 1,
-                              overflow: TextOverflow.ellipsis,
-                              style: Theme.of(context)
-                                  .textTheme
-                                  .subtitle1!
-                                  .copyWith(color: LightAppColors.blackColor),
-                            ),
+                            if ("${widget.selectedAddOn?.name}".isNotEmpty) ...[
+                              Text(
+                                "${widget.selectedAddOn?.name}",
+                                style: Theme.of(context)
+                                    .textTheme
+                                    .bodyText1!
+                                    .copyWith(color: LightAppColors.blackColor),
+                                textAlign: TextAlign.center,
+                              ),
+                            ],
+                            if ((widget.selectedAddOn?.price ?? "")
+                                .isNotEmpty) ...[
+                              Text(
+                                "\$ ${widget.selectedAddOn?.price ?? ""} ",
+                                style: Theme.of(context)
+                                    .textTheme
+                                    .subtitle1!
+                                    .copyWith(color: LightAppColors.primary),
+                              ),
+                            ],
+                            if ((widget.selectedAddOn?.colour ?? "")
+                                .isNotEmpty) ...[
+                              Text(
+                                "${widget.selectedAddOn?.colour ?? ""}",
+                                maxLines: 1,
+                                overflow: TextOverflow.ellipsis,
+                                style: Theme.of(context)
+                                    .textTheme
+                                    .subtitle1!
+                                    .copyWith(color: LightAppColors.blackColor),
+                              ),
+                            ],
                           ],
                         ),
                       ),
@@ -306,7 +313,7 @@ class _ReviewOrderScreenState extends State<ReviewOrderScreen> {
               ),
             ),
           ],
-          SizedBox(height: 20.0),
+          SizedBox(height: 10.0),
           if (widget.messageOnCake?.isNotEmpty ?? false) ...[
             Text(
               "Message on cake",

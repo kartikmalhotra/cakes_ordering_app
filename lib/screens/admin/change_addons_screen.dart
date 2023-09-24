@@ -50,7 +50,7 @@ class _ChangeAddOnsScreenState extends State<ChangeAddOnsScreen> {
     return Container(
       height: AppScreenConfig.safeBlockVertical! * 100,
       width: AppScreenConfig.safeBlockHorizontal! * 100,
-      padding: const EdgeInsets.only(left: 20, right: 20, top: 20),
+      padding: const EdgeInsets.only(left: 20, right: 20, top: 0),
       child: BlocBuilder<AddOnsBloc, AddOnsState>(
         builder: (context, state) {
           if (state is AddOnsLoadedState && state.errorMessage == null) {
@@ -63,9 +63,10 @@ class _ChangeAddOnsScreenState extends State<ChangeAddOnsScreen> {
                   padding: const EdgeInsets.symmetric(vertical: 10.0),
                   child: Card(
                     child: Container(
-                      height: AppScreenConfig.safeBlockVertical! * 50,
+                      height: AppScreenConfig.safeBlockVertical! * 40,
                       width: double.maxFinite,
                       padding: EdgeInsets.all(10.0),
+                      margin: EdgeInsets.symmetric(vertical: 10.0),
                       child: Column(
                         children: [
                           Padding(

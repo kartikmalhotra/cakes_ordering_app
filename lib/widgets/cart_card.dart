@@ -42,11 +42,11 @@ class _CartCardState extends State<CartCard> {
               children: [
                 Container(
                   width: double.maxFinite,
-                  height: AppScreenConfig.safeAreaVertical * 10,
+                  height: AppScreenConfig.safeAreaVertical * 8,
                   child: (widget.cartData.images?.isNotEmpty ?? false)
                       ? Image.network(
                           widget.cartData.images![0]["url"],
-                          fit: BoxFit.fill,
+                          fit: BoxFit.contain,
                         )
                       : Container(
                           color: Colors.grey.withOpacity(0.1),

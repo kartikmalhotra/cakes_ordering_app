@@ -44,11 +44,11 @@ class _OrderCardState extends State<OrderCard> {
               children: [
                 Container(
                   width: double.maxFinite,
-                  height: AppScreenConfig.safeAreaVertical * 10,
+                  height: AppScreenConfig.safeAreaVertical * 8,
                   child: (widget.orderData.images?.isNotEmpty ?? false)
                       ? Image.network(
                           widget.orderData.images![0]["url"],
-                          fit: BoxFit.fill,
+                          fit: BoxFit.contain,
                         )
                       : Container(
                           color: Colors.grey.withOpacity(0.1),

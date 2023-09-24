@@ -76,9 +76,9 @@ class _CakeDetailScreenState extends State<CakeDetailScreen> {
             ],
           ),
           Container(
-            margin: EdgeInsets.symmetric(vertical: 30),
+            margin: EdgeInsets.symmetric(vertical: 10),
             padding: EdgeInsets.all(6),
-            height: 305,
+            height: 200,
             width: double.maxFinite,
             child: Stack(
               children: [
@@ -88,7 +88,7 @@ class _CakeDetailScreenState extends State<CakeDetailScreen> {
                       ? CarouselSlider(
                           carouselController: carouselController,
                           options: CarouselOptions(
-                            height: 300,
+                            height: 200,
                             aspectRatio: 16 / 9,
                             viewportFraction: 1,
                             enableInfiniteScroll:
@@ -111,14 +111,14 @@ class _CakeDetailScreenState extends State<CakeDetailScreen> {
                                             children: <Widget>[
                                               CachedNetworkImage(
                                                 imageUrl: photo["url"],
-                                                fit: BoxFit.cover,
+                                                fit: BoxFit.contain,
                                                 progressIndicatorBuilder:
                                                     (context, _, __) {
                                                   return Center(
                                                       child:
                                                           AppCircularProgressIndicator());
                                                 },
-                                                height: 300,
+                                                height: 200,
                                                 width: double.maxFinite,
                                                 errorWidget: (context, url, _) {
                                                   return Container(

@@ -24,7 +24,8 @@ class RestAPIService {
     _instance ??= RestAPIService._internal();
 
     /// Production
-    _apiBaseUrl = "";
+    _apiBaseUrl =
+        "https://1a40-2405-201-6803-b848-f4a6-88ae-96a0-3678.ngrok-free.app";
 
     if (kDebugMode) {
       print(_apiBaseUrl);

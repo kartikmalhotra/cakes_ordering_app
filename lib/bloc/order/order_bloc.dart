@@ -26,7 +26,24 @@ class OrderBloc extends Bloc<OrderEvent, OrderState> {
     if (response is! Map) {
       final OrderDataModel orderDataModel =
           OrderDataModel.fromJson({"order_data": response});
-      emit(OrderDataLoaded(orderList: orderDataModel.orderList ?? []));
+      if (event.dateTime != null) {
+        List<OrderData> orderList = orderDataModel.orderList ?? [];
+        List<OrderData> filteredOrderList = [];
+        for (int i = 0; i < orderList.length; i++) {
+          String? stringDateTime = orderList[i].dateTime;
+          if (stringDateTime != null) {
+            DateTime dateTime = DateTime.parse(stringDateTime);
+            if (dateTime.day == event.dateTime?.day &&
+                dateTime.month == event.dateTime?.month &&
+                dateTime.year == event.dateTime?.year) {
+              filteredOrderList.add(orderList[i]);
+            }
+          }
+        }
+        emit(OrderDataLoaded(orderList: filteredOrderList));
+      } else {
+        emit(OrderDataLoaded(orderList: orderDataModel.orderList ?? []));
+      }
     } else {
       emit(OrderDataLoaded(
           error: response["error"] ??

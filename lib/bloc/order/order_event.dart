@@ -2,16 +2,13 @@ part of 'order_bloc.dart';
 
 abstract class OrderEvent extends Equatable {
   const OrderEvent();
-
-  @override
-  List<Object> get props => [];
 }
 
 class GetOrderEvent extends OrderEvent {
-  final DateTime dateTime;
-  const GetOrderEvent({required this.dateTime});
+  final DateTime? dateTime;
+  const GetOrderEvent({this.dateTime});
   @override
-  List<Object> get props => [dateTime];
+  List<Object?> get props => [dateTime];
 }
 
 class DeleteOrderEvent extends OrderEvent {
@@ -29,4 +26,7 @@ class AddOrderEvent extends OrderEvent {
   final DateTime dateTime;
 
   const AddOrderEvent({required this.cartItems, required this.dateTime});
+
+  @override
+  List<Object?> get props => [cartItems, dateTime];
 }
